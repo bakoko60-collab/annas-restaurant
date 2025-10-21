@@ -160,13 +160,17 @@ body, html {
 }
 
 .hero-content {
-  position: relative;
+  position: absolute;
   z-index: 2;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   color: #fff;
+  opacity: 0;
+  animation: fadeIn 1.8s ease-out forwards;
+  animation-delay: 0.3s;
+}
 }
 
 .hero-content h1 {
@@ -423,6 +427,7 @@ body.landing-page {
     transform: translate(-50%, -50%) scale(1);
   }
 }
+
 
 
 
